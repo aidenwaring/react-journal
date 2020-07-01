@@ -1,9 +1,14 @@
 import React from 'react'
+import CategorySelectionView from './CategorySelectionView'
+import NewEntryView from './NewEntryView'
+import HomeView from './HomeView'
 
 const App = () => {
   return (
     <div >
-          The basic empty template
+          <HomeView />
+          <CategorySelectionView />
+          <NewEntryView />
     </div>
   )
 }
