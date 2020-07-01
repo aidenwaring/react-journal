@@ -6,12 +6,16 @@ import NewEntryView from './NewEntryView'
 
 const App = () => {
   //Getter, setter  //Define state. Initial state of home.
-  const [page, setPage] = useState("home")
+  // const [page, setPage] = useState("home")
 
   return (
     
     <div>
-      
+      <BrowserRouter>
+        <Route path="/" component={HomeView} />
+        <Route path="/category" component={CategorySelectionView} />
+        <Route path="/entry" component={NewEntryView} />
+      </BrowserRouter>
     </div>
   )
 }
