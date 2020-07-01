@@ -15,7 +15,7 @@ const App = () => {
         </nav>
         <Route exact path="/" component={HomeView} />
         <Route exact path="/category" component={CategorySelectionView} />
-        <Route exact path="/entry" component={NewEntryView} />
+        <Route exact path="/entry/new/:cat_id" component={NewEntryView} />
       </BrowserRouter>
     </div>
   )
