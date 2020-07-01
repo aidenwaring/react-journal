@@ -9,12 +9,11 @@ const App = () => {
   // const [page, setPage] = useState("home")
 
   return (
-    
     <div>
       <BrowserRouter>
-        <Route path="/" component={HomeView} />
-        <Route path="/category" component={CategorySelectionView} />
-        <Route path="/entry" component={NewEntryView} />
+        <Route exact path="/" component={HomeView} />
+        <Route exact path="/category" component={CategorySelectionView} />
+        <Route exact path="/entry" component={NewEntryView} />
       </BrowserRouter>
     </div>
   )
