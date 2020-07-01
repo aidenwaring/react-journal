@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {BrowserRouter, Route} from 'react-router-dom'
 import HomeView from './HomeView'
 import CategorySelectionView from './CategorySelectionView'
 import NewEntryView from './NewEntryView'
@@ -10,14 +11,7 @@ const App = () => {
   return (
     
     <div>
-      <nav>
-        <button onClick={() => setPage("home")}>Home</button>
-        <button onClick={() => setPage("category")}>Category</button>
-        <button onClick={() => setPage("newEntry")}>New Entry</button>
-      </nav>
-      {page == "home" && <HomeView />}
-      {page == "category" && <CategorySelectionView />}
-      {page == "newEntry" && <NewEntryView />}
+      
     </div>
   )
 }
